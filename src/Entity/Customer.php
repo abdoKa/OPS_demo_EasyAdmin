@@ -6,6 +6,7 @@ use App\Repository\CustomerRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Gedmo\Mapping\Annotation as Gedmo;
 
 /**
  * @ORM\Entity(repositoryClass=CustomerRepository::class)
@@ -37,12 +38,36 @@ class Customer
     /**
      * @ORM\Column(type="integer")
      */
-    private $CCE;
+    private $CCI;
 
     /**
      * @ORM\OneToMany(targetEntity=Order::class, mappedBy="clientId")
      */
     private $orders;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $country;
+
+    /**
+     * @ORM\Column(type="integer", nullable=true)
+     */
+    private $zipCode;
+
+    /**
+     * @ORM\Column(type="string", length=255)
+     */
+    private $phone;
+
+    /**
+     * @Gedmo\Timestampable(on="create")
+     * @ORM\Column(type="datetime")
+     */
+    private $createdAt;
+
+
+
 
     public function __construct()
     {
@@ -90,14 +115,14 @@ class Customer
         return $this;
     }
 
-    public function getCCE(): ?int
+    public function getCCI(): ?int
     {
-        return $this->CCE;
+        return $this->CCI;
     }
 
-    public function setCCE(int $CCE): self
+    public function setCCI(int $CCI): self
     {
-        $this->CCE = $CCE;
+        $this->CCI = $CCI;
 
         return $this;
     }
@@ -131,4 +156,56 @@ class Customer
 
         return $this;
     }
+
+    public function getCountry(): ?string
+    {
+        return $this->country;
+    }
+
+    public function setCountry(string $country): self
+    {
+        $this->country = $country;
+
+        return $this;
+    }
+
+    public function getZipCode(): ?int
+    {
+        return $this->zipCode;
+    }
+
+    public function setZipCode(?int $zipCode): self
+    {
+        $this->zipCode = $zipCode;
+
+        return $this;
+    }
+
+    public function getPhone(): ?string
+    {
+        return $this->phone;
+    }
+
+    public function setPhone(string $phone): self
+    {
+        $this->phone = $phone;
+
+        return $this;
+    }
+
+    public function getCreatedAt(): ?\DateTimeInterface
+    {
+        return $this->createdAt;
+    }
+
+    public function setCreatedAt(\DateTimeInterface $createdAt): self
+    {
+        $this->createdAt = $createdAt;
+
+        return $this;
+    }
+
+
+
+
 }
