@@ -31,10 +31,6 @@ class Order
      */
     private $clientId;
 
-    /**
-     * @ORM\OneToMany(targetEntity=OrderProduct::class, mappedBy="orderParrent")
-     */
-    private $orderProducts;
 
     public function __construct()
     {
@@ -70,33 +66,7 @@ class Order
         return $this;
     }
 
-    /**
-     * @return Collection|OrderProduct[]
-     */
-    public function getOrderProducts(): Collection
-    {
-        return $this->orderProducts;
-    }
 
-    public function addOrderProduct(OrderProduct $orderProduct): self
-    {
-        if (!$this->orderProducts->contains($orderProduct)) {
-            $this->orderProducts[] = $orderProduct;
-            $orderProduct->setOrderParrent($this);
-        }
 
-        return $this;
-    }
 
-    public function removeOrderProduct(OrderProduct $orderProduct): self
-    {
-        if ($this->orderProducts->removeElement($orderProduct)) {
-            // set the owning side to null (unless already changed)
-            if ($orderProduct->getOrderParrent() === $this) {
-                $orderProduct->setOrderParrent(null);
-            }
-        }
-
-        return $this;
-    }
 }

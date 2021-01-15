@@ -7,14 +7,11 @@ use EasyCorp\Bundle\EasyAdminBundle\Config\Action;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Actions;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Crud;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;
-use EasyCorp\Bundle\EasyAdminBundle\Field\CountryField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\DateTimeField;
-use EasyCorp\Bundle\EasyAdminBundle\Field\EmailField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\FormField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\IntegerField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\MoneyField;
-use EasyCorp\Bundle\EasyAdminBundle\Field\TelephoneField;
-use EasyCorp\Bundle\EasyAdminBundle\Field\TextareaField;
+
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextEditorField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\TextField;
 
@@ -30,7 +27,7 @@ class ProductCrudController extends AbstractCrudController
         return $crud
             ->setEntityLabelInSingular('Product')
             ->setEntityLabelInPlural('Products')
-            ->setSearchFields(['id', 'name', 'reference', 'description', 'price', 'orderProducts'])
+            ->setSearchFields(['name', 'reference', 'description', 'price'])
             ->showEntityActionsAsDropdown()
             ;
     }
@@ -50,8 +47,8 @@ class ProductCrudController extends AbstractCrudController
         return [
             FormField::addPanel('Product information'),
             $name, $reference, $description,$price->setCurrency('MAD'),
-//            FormField::addPanel('createdAt','Created At :'),
-//            $createdAt->onlyOnDetail()
+            FormField::addPanel('createdAt','Created At :'),
+            $createdAt->onlyOnDetail()
 
         ];
     }

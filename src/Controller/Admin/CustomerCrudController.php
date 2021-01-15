@@ -28,7 +28,7 @@ class CustomerCrudController extends AbstractCrudController
         return $crud
             ->setEntityLabelInSingular('Customer')
             ->setEntityLabelInPlural('Customers')
-            ->setSearchFields(['id', 'name', 'email', 'country', 'address', 'zipCode', 'CCE', 'phone'])
+            ->setSearchFields([ 'name', 'email', 'country', 'address', 'zipCode', 'CCI', 'phone'])
             ->showEntityActionsAsDropdown()
     ;
     }
