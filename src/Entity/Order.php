@@ -31,10 +31,24 @@ class Order
      */
     private $clientId;
 
+    /**
+     * @ORM\ManyToMany(targetEntity=Product::class)
+     */
+    private $products;
+
+    /**
+     * @ORM\Column(type="integer")
+     */
+    private $quantity;
+
+
+
 
     public function __construct()
     {
         $this->orderProducts = new ArrayCollection();
+        $this->products = new ArrayCollection();
+        $this->orderDetails = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -65,6 +79,43 @@ class Order
 
         return $this;
     }
+
+    /**
+     * @return Collection|Product[]
+     */
+    public function getProducts(): Collection
+    {
+        return $this->products;
+    }
+
+    public function addProduct(Product $product): self
+    {
+        if (!$this->products->contains($product)) {
+            $this->products[] = $product;
+        }
+
+        return $this;
+    }
+
+    public function removeProduct(Product $product): self
+    {
+        $this->products->removeElement($product);
+
+        return $this;
+    }
+
+    public function getQuantity(): ?int
+    {
+        return $this->quantity;
+    }
+
+    public function setQuantity(int $quantity): self
+    {
+        $this->quantity = $quantity;
+
+        return $this;
+    }
+
 
 
 

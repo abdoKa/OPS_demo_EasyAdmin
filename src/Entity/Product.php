@@ -35,10 +35,7 @@ class Product
      */
     private $description;
 
-    /**
-     * @ORM\OneToMany(targetEntity=OrderProduct::class, mappedBy="productId")
-     */
-    private $orderProducts;
+
 
     /**
      * @ORM\Column(type="float")
@@ -51,10 +48,16 @@ class Product
      */
     private $createdAt;
 
-    public function __construct()
-    {
-        $this->orderProducts = new ArrayCollection();
-    }
+    /**
+     * @ORM\Column(type="boolean", nullable=true)
+     */
+    private $enabled;
+
+
+
+
+
+
 
     public function getId(): ?int
     {
@@ -97,35 +100,7 @@ class Product
         return $this;
     }
 
-    /**
-     * @return Collection|OrderProduct[]
-     */
-    public function getOrderProducts(): Collection
-    {
-        return $this->orderProducts;
-    }
 
-    public function addOrderProduct(OrderProduct $orderProduct): self
-    {
-        if (!$this->orderProducts->contains($orderProduct)) {
-            $this->orderProducts[] = $orderProduct;
-            $orderProduct->setProductId($this);
-        }
-
-        return $this;
-    }
-
-    public function removeOrderProduct(OrderProduct $orderProduct): self
-    {
-        if ($this->orderProducts->removeElement($orderProduct)) {
-            // set the owning side to null (unless already changed)
-            if ($orderProduct->getProductId() === $this) {
-                $orderProduct->setProductId(null);
-            }
-        }
-
-        return $this;
-    }
 
     public function getPrice(): ?float
     {
@@ -156,4 +131,19 @@ class Product
         // TODO: Implement __toString() method.
         return $this->name;
     }
+
+    public function getEnabled(): ?bool
+    {
+        return $this->enabled;
+    }
+
+    public function setEnabled(bool $enabled): self
+    {
+        $this->enabled = $enabled;
+
+        return $this;
+    }
+
+
+
 }

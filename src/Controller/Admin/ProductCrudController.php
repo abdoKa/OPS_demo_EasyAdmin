@@ -7,6 +7,7 @@ use EasyCorp\Bundle\EasyAdminBundle\Config\Action;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Actions;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Crud;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;
+use EasyCorp\Bundle\EasyAdminBundle\Field\BooleanField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\DateTimeField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\FormField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\IntegerField;
@@ -38,16 +39,17 @@ class ProductCrudController extends AbstractCrudController
         $reference = IntegerField::new('reference', 'Product Reference');
         $description = TextEditorField::new('description','Product Description');
         $price = MoneyField::new('price','price');
+        $enabled = BooleanField::new('enabled','Avilable');
         $createdAt = DateTimeField::new('createdAt','Created At: ');
 
         if (Crud::PAGE_INDEX === $pageName) {
-            return [$name, $reference, $description, $price->setCurrency('MAD')->onlyOnDetail(), $createdAt];
+            return [$enabled,$name, $reference, $description, $price->setCurrency('MAD')->onlyOnDetail(), $createdAt];
         }
 
         return [
             FormField::addPanel('Product information'),
-            $name, $reference, $description,$price->setCurrency('MAD'),
-            FormField::addPanel('createdAt','Created At :'),
+            $name, $reference, $description,$price->setCurrency('MAD'),$enabled->hideOnForm(),
+            FormField::addPanel('createdAt','Created At :')->hideOnForm(),
             $createdAt->onlyOnDetail()
 
         ];

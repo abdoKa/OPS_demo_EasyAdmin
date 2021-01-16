@@ -3,7 +3,6 @@
 namespace App\Controller\Admin;
 
 use App\Entity\Order;
-
 use EasyCorp\Bundle\EasyAdminBundle\Config\Action;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Actions;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Crud;
@@ -11,7 +10,12 @@ use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;
 use EasyCorp\Bundle\EasyAdminBundle\Field\AssociationField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\ChoiceField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\DateField;
-
+use EasyCorp\Bundle\EasyAdminBundle\Field\DateTimeField;
+use EasyCorp\Bundle\EasyAdminBundle\Field\FormField;
+use EasyCorp\Bundle\EasyAdminBundle\Field\IntegerField;
+use EasyCorp\Bundle\EasyAdminBundle\Field\MoneyField;
+use EasyCorp\Bundle\EasyAdminBundle\Field\TextEditorField;
+use EasyCorp\Bundle\EasyAdminBundle\Field\TextField;
 
 class OrderCrudController extends AbstractCrudController
 {
@@ -28,35 +32,30 @@ class OrderCrudController extends AbstractCrudController
             ->showEntityActionsAsDropdown()
             ;
     }
-
-
-
     public function configureFields(string $pageName): iterable
     {
 
-//            $deliveryAt = DateField::new('deliveryAt', 'Delivery Date');
-//            $customer = AssociationField::new('clientId','Company Name');
-//            $prodcut = CollectionField::new('orderProducts','Products');
+        $deliveryAt = DateField::new('deliveryAt','Delivery Date ');
+        $customer = AssociationField::new('clientId', 'Customer');
+
+        $products = AssociationField::new('products');
+        $quantity = IntegerField::new('quantity','Customer\'s Quantity');
 
 
+        if (Crud::PAGE_INDEX === $pageName) {
+            return [$deliveryAt, $customer, $products,$quantity];
+        }
 
-        yield  DateField::new('deliveryAt', 'Delivery Date');
+        return [
+            FormField::addPanel('Order information'),
+            $deliveryAt,$customer,$quantity,
 
-        yield AssociationField::new('clientId','Company Name');
+            FormField::addPanel('Order\'s Product information'),
+            $products,
+            FormField::addPanel('createdAt','Created At :')->hideOnForm(),
+//            $createdAt->onlyOnDetail()
 
-
-
-//        if (Crud::PAGE_INDEX === $pageName) {
-//            return [$deliveryAt, $customer, $prodcut ];
-//        }
-//
-//        return [
-//            FormField::addPanel('Order information'),
-//            $deliveryAt, $customer, $prodcut
-//
-//
-//
-//        ];
+        ];
     }
 
     public function configureActions(Actions $actions): Actions
@@ -68,4 +67,14 @@ class OrderCrudController extends AbstractCrudController
             ;
     }
 
+    /*
+    public function configureFields(string $pageName): iterable
+    {
+        return [
+            IdField::new('id'),
+            TextField::new('title'),
+            TextEditorField::new('description'),
+        ];
+    }
+    */
 }

@@ -5,6 +5,7 @@ namespace App\Controller\Admin;
 use App\Entity\Customer;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Actions;
 use EasyCorp\Bundle\EasyAdminBundle\Config\Crud;
+use EasyCorp\Bundle\EasyAdminBundle\Config\Filters;
 use EasyCorp\Bundle\EasyAdminBundle\Controller\AbstractCrudController;
 use EasyCorp\Bundle\EasyAdminBundle\Field\CountryField;
 use EasyCorp\Bundle\EasyAdminBundle\Field\DateTimeField;
@@ -68,6 +69,15 @@ class CustomerCrudController extends AbstractCrudController
             // ...
             ->add(Crud::PAGE_INDEX, Action::DETAIL)
             ->add(Crud::PAGE_EDIT, Action::SAVE_AND_ADD_ANOTHER)
+            ;
+    }
+    public function configureFilters(Filters $filters): Filters
+    {
+        return $filters
+            ->add('name')
+            ->add('email')
+            ->add('CCI')
+            ->add('country')
             ;
     }
 

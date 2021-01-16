@@ -4,12 +4,10 @@
     <list default="true" id="d1f0d877-d397-4a8b-ab96-68dcd9a1a329" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/Admin/CustomerCrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/CustomerCrudController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/OrderCrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/OrderCrudController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/OrderProductCrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/OrderProductCrudController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/Admin/OrderCrudController.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/Admin/ProductCrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/Admin/ProductCrudController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Customer.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Customer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Order.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/OrderProduct.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/OrderProduct.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Entity/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Product.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -25,7 +23,7 @@
     </execution>
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.6022976">
+    <splitter split-orientation="horizontal" split-proportion="0.5572917">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
           <file pinned="false" current-in-tab="false">
@@ -37,11 +35,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Controller/Admin/DashboardController.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="770">
-                  <caret line="44" column="83" selection-start-line="44" selection-start-column="83" selection-end-line="44" selection-end-column="83" />
+                <state relative-caret-position="456">
+                  <caret line="49" selection-start-line="49" selection-end-line="49" />
                   <folding>
                     <element signature="e#40#64#0#PHP" expanded="true" />
                   </folding>
@@ -52,8 +50,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Controller/Admin/CustomerCrudController.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="330">
-                  <caret line="28" column="48" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="48" />
+                <state relative-caret-position="1012">
+                  <caret line="79" column="26" selection-start-line="79" selection-start-column="26" selection-end-line="79" selection-end-column="26" />
                   <folding>
                     <element signature="e#40#64#0#PHP" expanded="true" />
                   </folding>
@@ -62,43 +60,22 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/Controller/Admin/OrderCrudController.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="285">
+                  <caret line="41" column="73" selection-start-line="37" selection-start-column="8" selection-end-line="41" selection-end-column="73" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Controller/Admin/ProductCrudController.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="640">
-                  <caret line="53" column="5" selection-start-line="33" selection-start-column="3" selection-end-line="53" selection-end-column="5" />
+                <state relative-caret-position="545">
+                  <caret line="51" column="73" selection-start-line="51" selection-start-column="73" selection-end-line="51" selection-end-column="73" />
                   <folding>
                     <element signature="e#40#63#0#PHP" expanded="true" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/Controller/Admin/OrderProductCrudController.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="288">
-                  <caret line="41" column="62" selection-start-line="41" selection-start-column="62" selection-end-line="41" selection-end-column="62" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Controller/Admin/OrderCrudController.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="682">
-                  <caret line="43" selection-start-line="43" selection-end-line="43" />
-                  <folding>
-                    <element signature="e#40#61#0#PHP" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Repository/ProductRepository.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="132">
-                  <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
                 </state>
               </provider>
             </entry>
@@ -110,7 +87,7 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Entity/Customer.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="4532">
+                <state relative-caret-position="4064">
                   <caret line="210" column="27" selection-start-line="210" selection-start-column="27" selection-end-line="210" selection-end-column="27" />
                   <folding>
                     <element signature="e#30#68#0#PHP" expanded="true" />
@@ -122,8 +99,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/Entity/Order.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="706">
-                  <caret line="67" selection-start-line="67" selection-end-line="67" />
+                <state relative-caret-position="-287">
+                  <caret line="43" selection-start-line="43" selection-end-line="43" />
                 </state>
               </provider>
             </entry>
@@ -131,8 +108,8 @@
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/Entity/Product.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="2883">
-                  <caret line="157" column="5" selection-start-line="153" selection-start-column="3" selection-end-line="157" selection-end-column="5" />
+                <state relative-caret-position="505">
+                  <caret line="57" selection-start-line="57" selection-end-line="57" />
                   <folding>
                     <element signature="e#30#67#0#PHP" expanded="true" />
                   </folding>
@@ -141,10 +118,19 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/Entity/OrderProduct.php">
+            <entry file="file://$PROJECT_DIR$/migrations/Version20210115192340.php">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-396">
-                  <caret column="5" selection-start-column="5" selection-end-column="5" />
+                <state relative-caret-position="242">
+                  <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/migrations/Version20210115192908.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="242">
+                  <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
                 </state>
               </provider>
             </entry>
@@ -170,15 +156,16 @@
       <list>
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/config/packages/stof_doctrine_extensions.yaml" />
-        <option value="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" />
-        <option value="$PROJECT_DIR$/src/Controller/Admin/CustomerCrudController.php" />
-        <option value="$PROJECT_DIR$/src/Entity/Product.php" />
         <option value="$PROJECT_DIR$/src/Entity/Customer.php" />
         <option value="$PROJECT_DIR$/src/Entity/OrderProduct.php" />
+        <option value="$PROJECT_DIR$/src/Controller/Admin/OrderProductCrudController.php" />
         <option value="$PROJECT_DIR$/src/Controller/Admin/ProductCrudController.php" />
         <option value="$PROJECT_DIR$/src/Controller/Admin/OrderCrudController.php" />
-        <option value="$PROJECT_DIR$/src/Controller/Admin/OrderProductCrudController.php" />
+        <option value="$PROJECT_DIR$/src/Controller/Admin/CustomerCrudController.php" />
+        <option value="$PROJECT_DIR$/src/Controller/Admin/OrderDetailsCrudController.php" />
+        <option value="$PROJECT_DIR$/src/Entity/Product.php" />
         <option value="$PROJECT_DIR$/src/Entity/Order.php" />
+        <option value="$PROJECT_DIR$/src/Controller/Admin/DashboardController.php" />
       </list>
     </option>
   </component>
@@ -315,7 +302,17 @@
             <path>
               <item name="OPS_demo_EasyAdmin-master" type="b2602c69:ProjectViewProjectNode" />
               <item name="OPS_demo_EasyAdmin-master" type="462c0819:PsiDirectoryNode" />
-              <item name="bin" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OPS_demo_EasyAdmin-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OPS_demo_EasyAdmin-master" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="OPS_demo_EasyAdmin-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="OPS_demo_EasyAdmin-master" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="OPS_demo_EasyAdmin-master" type="b2602c69:ProjectViewProjectNode" />
@@ -358,6 +355,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/public/images" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -391,12 +389,14 @@
       <workItem from="1610717912931" duration="45000" />
       <workItem from="1610718042040" duration="4439000" />
       <workItem from="1610722904746" duration="7459000" />
-      <workItem from="1610735212397" duration="2995000" />
+      <workItem from="1610735212397" duration="4900000" />
+      <workItem from="1610740948766" duration="2754000" />
+      <workItem from="1610788477985" duration="4545000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20363000" />
+    <option name="totallyTimeSpent" value="29567000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="38" width="2560" height="1562" extended-state="6" />
@@ -406,7 +406,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32938564" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -415,7 +415,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.39674315" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.39628252" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -427,7 +427,7 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32938564" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -436,7 +436,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.39674315" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.39628252" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -462,10 +462,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/var/cache/dev/ContainerDxjWGYo/removed-ids.php">
+    <entry file="file://$PROJECT_DIR$/var/cache/dev/ContainerDxjWGYo/removed-ids.php" />
+    <entry file="file://$PROJECT_DIR$/src/Entity/OrderProduct.php" />
+    <entry file="file://$PROJECT_DIR$/src/Controller/Admin/OrderProductCrudController.php" />
+    <entry file="file://$PROJECT_DIR$/src/Repository/ProductRepository.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
+        <state relative-caret-position="264">
+          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/easycorp/easyadmin-bundle/src/Field/FieldTrait.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="257">
+          <caret line="162" column="20" selection-start-line="162" selection-start-column="20" selection-end-line="162" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -476,29 +486,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/Admin/DashboardController.php">
+    <entry file="file://$PROJECT_DIR$/migrations/Version20210115192340.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="770">
-          <caret line="44" column="83" selection-start-line="44" selection-start-column="83" selection-end-line="44" selection-end-column="83" />
-          <folding>
-            <element signature="e#40#64#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="242">
+          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/Admin/CustomerCrudController.php">
+    <entry file="file://$PROJECT_DIR$/migrations/Version20210115192908.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="28" column="48" selection-start-line="28" selection-start-column="40" selection-end-line="28" selection-end-column="48" />
+        <state relative-caret-position="242">
+          <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/index.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/Admin/ProductCrudController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="545">
+          <caret line="51" column="73" selection-start-line="51" selection-start-column="73" selection-end-line="51" selection-end-column="73" />
           <folding>
-            <element signature="e#40#64#0#PHP" expanded="true" />
+            <element signature="e#40#63#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Entity/Customer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4532">
+        <state relative-caret-position="4064">
           <caret line="210" column="27" selection-start-line="210" selection-start-column="27" selection-end-line="210" selection-end-column="27" />
           <folding>
             <element signature="e#30#68#0#PHP" expanded="true" />
@@ -506,61 +523,64 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/Product.php">
+    <entry file="file://$PROJECT_DIR$/src/Controller/Admin/CustomerCrudController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2883">
-          <caret line="157" column="5" selection-start-line="153" selection-start-column="3" selection-end-line="157" selection-end-column="5" />
+        <state relative-caret-position="1012">
+          <caret line="79" column="26" selection-start-line="79" selection-start-column="26" selection-end-line="79" selection-end-column="26" />
           <folding>
-            <element signature="e#30#67#0#PHP" expanded="true" />
+            <element signature="e#40#64#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/Admin/ProductCrudController.php">
+    <entry file="file://$PROJECT_DIR$/src/Entity/OrderDetails.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="53" column="5" selection-start-line="33" selection-start-column="3" selection-end-line="53" selection-end-column="5" />
-          <folding>
-            <element signature="e#40#63#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="484">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Repository/ProductRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/Admin/OrderCrudController.php">
+    <entry file="file://$PROJECT_DIR$/src/Controller/Admin/OrderDetailsCrudController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="682">
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
+          <caret line="31" column="35" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
           <folding>
             <element signature="e#40#61#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/OrderProduct.php">
+    <entry file="file://$PROJECT_DIR$/src/Controller/Admin/OrderCrudController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-396">
-          <caret column="5" selection-start-column="5" selection-end-column="5" />
+        <state relative-caret-position="285">
+          <caret line="41" column="73" selection-start-line="37" selection-start-column="8" selection-end-line="41" selection-end-column="73" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/Admin/OrderProductCrudController.php">
+    <entry file="file://$PROJECT_DIR$/src/Entity/Product.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="41" column="62" selection-start-line="41" selection-start-column="62" selection-end-line="41" selection-end-column="62" />
+        <state relative-caret-position="505">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+          <folding>
+            <element signature="e#30#67#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Entity/Order.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="706">
-          <caret line="67" selection-start-line="67" selection-end-line="67" />
+        <state relative-caret-position="-287">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/Admin/DashboardController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+          <folding>
+            <element signature="e#40#64#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
