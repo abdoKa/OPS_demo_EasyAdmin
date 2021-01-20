@@ -2,6 +2,7 @@
 
 namespace App\Controller\Admin;
 
+use App\Entity\Category;
 use App\Entity\Customer;
 use App\Entity\Order;
 use App\Entity\OrderDetails;
@@ -45,8 +46,10 @@ class DashboardController extends AbstractDashboardController
         yield MenuItem::section('OPS');
         yield MenuItem::linktoDashboard('Dashboard', 'fa fa-home');
         yield MenuItem::linkToCrud('Customers', 'far fa-building', Customer::class);
+        yield MenuItem::linkToCrud('Categories', 'fas fa-boxes', Category::class);
         yield MenuItem::linkToCrud('Products', 'fab fa-product-hunt', Product::class);
         yield MenuItem::linkToCrud('Orders', 'fas fa-boxes', Order::class);
+
 
 
 
